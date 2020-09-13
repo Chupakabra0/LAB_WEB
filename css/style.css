@@ -1,0 +1,43 @@
+    /* Body style */
+    body {
+        margin: 0px;
+    }
+    /* Style for logo div */
+    .Word {
+        display: inline-block;
+        margin: 0px 0px 25px 17px;
+        text-align: center;
+    }
+    /* Menu list style */
+    .Menu {
+        list-style: none;
+        text-align: center;
+    }
+    /* Elements of menu style */
+    .Menu li {
+        display: inline-block;
+        padding: 0px 8px;
+    }
+    /* Links' elements style */
+    .Menu li a {
+        color: white;
+        text-decoration: none;
+    }
+    /* Menu bar div style */
+    .MenuBar {
+        display: inline-block;
+    }
+    /* Header div style */
+    .Header {
+        background-color: black;
+        font-weight: bold;
+        font-size: larger;
+    }
+    .Image {
+        margin: 10px;
+        text-align: center;
+    }
+    /* Content div style */
+    .Content {
+        margin: 15px;
+    }
