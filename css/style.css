@@ -1,43 +1,85 @@
     /* Body style */
     body {
+        background: #DDDDDD;
         margin: 0px;
+        font-size: 20px;
+    }
+    /* Footer style */
+    footer {
+        background: #BBBBBB;
+        padding: 25px;
+    }
+    /* Hyperlinks style */
+    a {
+        text-decoration: none;
     }
     /* Style for logo div */
-    .Word {
+    div.Word {
         display: inline-block;
         margin: 0px 0px 25px 17px;
         text-align: center;
     }
+    /* Style for header div of headers */
+    div.H2 h2 {
+        display: inline-block;
+    }
+    /* Style for back-link div of headers */
+    div.H2 a {
+        text-decoration: inherit;
+        float: right;
+        /* margin of h2 + 10px/2 of font-size difference */
+        margin: 29.900px 0px;
+    }
     /* Menu list style */
-    .Menu {
+    ul.Menu {
         list-style: none;
         text-align: center;
     }
     /* Elements of menu style */
-    .Menu li {
+    ul.Menu li {
         display: inline-block;
         padding: 0px 8px;
     }
     /* Links' elements style */
-    .Menu li a {
+    ul.Menu li a {
         color: white;
-        text-decoration: none;
+        text-decoration: inherit;
     }
     /* Menu bar div style */
-    .MenuBar {
+    div.MenuBar {
         display: inline-block;
     }
     /* Header div style */
-    .Header {
+    div.Header {
         background-color: black;
         font-weight: bold;
         font-size: larger;
     }
-    .Image {
-        margin: 10px;
+    /* Images div style */
+    div.Image {
+        margin: 20px 0px;
         text-align: center;
     }
     /* Content div style */
-    .Content {
-        margin: 15px;
+    div.Content {
+        margin: 25px;
+    }
+    /* Footer sources div style */
+    footer div.Source {
+        display: inline-block;
+    }
+    /* Footer links style */
+    footer div.Links {
+        display: inline-block;
+    }
+    /* Link lists style */
+    ul.LinksList {
+        list-style: none;
+        /* to remove 40px padding-inline-start, that actually created from nothing */
+        padding-inline-start: 0px;
+    }
+    /* Style for elements of link list */
+    ul.LinksList li {
+        display: inline-block;
+        padding: 0px 0px 0px 8px;
     }
