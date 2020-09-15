@@ -4,20 +4,24 @@
         color: #EEEEEE;
         margin: 0px;
         font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: justify;
     }
     /* Footer style */
     footer {
-        background: #BBBBBB;
+        background: #000000;
         padding: 25px;
+        font-family: cursive;
     }
     /* Hyperlinks style */
     a {
         text-decoration: none;
+        color: #EEEEEE;
     }
     /* Style for logo div */
     div.Word {
         display: inline-block;
-        margin: 0px 0px 25px 17px;
+        margin: 10px 0px 0px 30px;
         text-align: center;
     }
     /* Style for header div of headers */
@@ -39,7 +43,7 @@
     /* Elements of menu style */
     ul.Menu li {
         display: inline-block;
-        padding: 0px 8px;
+        padding: 8px;
     }
     /* Links' elements style */
     ul.Menu li a {
@@ -54,7 +58,8 @@
     div.Header {
         background-color: black;
         font-weight: bold;
-        font-size: larger;
+        font-size: 20px;
+        font-family: cursive;
     }
     /* Images div style */
     div.Image {
