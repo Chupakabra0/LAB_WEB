@@ -33,6 +33,7 @@
         text-decoration: inherit;
         float: right;
         /* margin of h2 + 10px/2 of font-size difference */
+        /* TODO remove this fucking disgusting piece of madness and make some shared div margin */
         margin: 29.900px 0px;
     }
     /* Menu list style */
