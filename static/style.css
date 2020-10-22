@@ -1,7 +1,7 @@
     /* Body style */
     body {
         background: #333333;
-        color: #EEEEEE;
+        /*color: #EEEEEE;*/
         margin: 0px;
         font-size: 20px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -15,8 +15,12 @@
     }
     /* Hyperlinks style */
     a {
+        transition: color 0.5s ease-out;
         text-decoration: none;
         color: #EEEEEE;
+    }
+    a:hover {
+        color: yellow;
     }
     /* Style for logo div */
     div.Word {
@@ -26,15 +30,19 @@
     }
     /* Style for header div of headers */
     div.H2 h2 {
+        color: #EEEEEE;
         display: inline-block;
+    }
+    div.Text {
+        color: white;
     }
     /* Style for back-link div of headers */
     div.H2 a {
         text-decoration: inherit;
         float: right;
         /* margin of h2 + 10px/2 of font-size difference */
-        /* TODO remove this fucking disgusting piece of madness and make some shared div margin */
-        margin: 29.900px 0px;
+        /* TODO remove this disgusting piece of madness and make some shared div margin */
+        margin: 29.9px 0px;
     }
     /* Menu list style */
     ul.Menu {
@@ -67,6 +75,18 @@
         margin: 20px 0px;
         text-align: center;
     }
+
+    /* Hover image resize */
+    div.Image img {
+        transition: all 0.5s ease-out;
+        height: 300px;
+        width: auto;
+    }
+    div.Image img:hover {
+        height: 600px;
+        width: auto;
+        cursor: pointer;
+    }
     /* Content div style */
     div.Content {
         margin: 25px;
@@ -74,6 +94,7 @@
     /* Footer sources div style */
     footer div.Source {
         display: inline-block;
+        color: #EEEEEE;
     }
     /* Footer links style */
     footer div.Links {
@@ -89,4 +110,54 @@
     ul.LinksList li {
         display: inline-block;
         padding: 0px 0px 0px 8px;
+    }
+
+
+
+    div.commentsSection {
+        padding: 25px;
+        background: #222222;
+    }
+
+    div.commentsSection div.addCommentForm {
+        text-align: right;
+    }
+
+    div.commentsSection div.addCommentForm textarea {
+        min-height: 50px;
+        width: 100%;
+        margin: 0.5em 0em;
+        padding: 0px;
+        resize: vertical;
+    }
+
+    div.commentsSection > div.comments {
+        border: 1px solid #AAAAAA;
+        padding: 0.5em;
+        margin: 1em 0em;
+        color: #CCCCCC;
+    }
+
+    div.error {
+        color: red;
+    }
+
+    body.logBody {
+        display: flex;
+        flex-direction: inherit;
+        justify-content: center;
+        color: #DDDDDD;
+    }
+
+    div.formDiv {
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    div.logoutSection {
+        display: inline-block;
+        float: right;
+        margin: 16px 3px;
+        padding: 0.5em;
+        color: #EEEEEE;
     }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<body class="logBody">
+    <div class="logDiv">
+
+        {{ if . }}
+            <div class="error">
+                {{ . }}
+            </div>
+        {{ end }}
+
+        <div class="H2" style="display: flex; justify-content: center">
+            <h2>Login:</h2>
+        </div>
+
+        <div>
+            <form method="post">
+                <div class="formDiv">
+                    <p>Username:</p><input name="username">
+                </div>
+                <div class="formDiv">
+                    <p>Password:</p><input name="password" type="password">
+                </div>
+                <div style="display: flex; justify-content: center; flex-direction: column">
+                    <div class="formDiv" style="display: flex; justify-content: center; flex-direction: column">
+                        <button type="submit">Submit</button>
+                    </div>
+                    <div class="formDiv" style="display: flex; justify-content: center">
+                        <a href="/register">Register</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

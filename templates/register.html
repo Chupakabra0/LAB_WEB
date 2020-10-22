@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<body class="logBody">
+    <div class="LogDiv">
+        {{ if . }}
+            <div class="error">
+                {{ . }}
+            </div>
+        {{ end }}
+
+        <div class="H2" style="display: flex; justify-content: center">
+            <h2>Register:</h2>
+        </div>
+
+        <div>
+            <form method="post">
+                <div class="formDiv">
+                    <p>Username:</p><input name="username" type="text">
+                </div>
+                <div class="formDiv">
+                    <p>Password:</p><input name="password" type="password">
+                </div>
+                <div class="formDiv">
+                    <p>Email:</p><input name="email" type="email">
+                    <input type="checkbox" name="emailHide">Hide?</input>
+                </div>
+                <div class="formDiv">
+                    <p>Phone:</p><input name="phone" type="tel" pattern="(\+?\d[- .]*){7,13}">
+                    <input name="phoneHide" type="checkbox">Hide?</input>
+                </div>
+                <div class="formDiv">
+                    <p>Birthdate:</p><input name="birth" type="date">
+                </div>
+                <div class="formDiv">
+                    <input name="gender" type="radio" checked="checked">M</input>
+                    <input name="gender" type="radio">W</input>
+                    <input name="gender" type="radio">N</input>
+                </div>
+                <div class="formDiv" style="display: flex; justify-content: center;">
+                    <input name="button" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

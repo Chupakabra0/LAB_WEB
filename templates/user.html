@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .User.GetUsername }}</title>
+</head>
+<body style="display: flex; justify-content: center; flex-direction: column">
+
+    <div>
+
+        <p>Username: {{ .User.GetUsername }}</p>
+
+        <p>Birthday: {{ .User.GetBirth }}</p>
+
+        <p>Gender: {{ .User.GetGender }}</p>
+
+        <p>Email: {{ .User.GetEmail }}</p>
+
+        <p>Phone: {{ .User.GetPhone }}</p>
+
+    </div>
+
+</body>
+</html>
