@@ -1,9 +1,7 @@
 
+go-redis/
+mux/
 .idea/.name
-.idea/inspectionProfiles/Project_Default.xml
-.idea/modules.xml
-.idea/modules.xml
-.idea/LAB1_WEB.iml
 .idea/vcs.xml
 .idea/workspace.xml
-.idea/codeStyles/codeStyleConfig.xml
+.idea/vcs.xml
